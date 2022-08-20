@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="cartLogo.png">
+    <title>flipZone</title>
+  </head>
+  <body class="authenticateBody">
+    <section class="content">
+      <div class="left">
+        <div class="container">
+          <div class="heading">
+            <hr><span>Login</span><hr>
+          </div>
+          <form action="/login" method="post">
+            <input class="input-field block-input" name="email" type="email" placeholder="Email" autocomplete="off">
+            <input class="input-field block-input" name="password" type="password" placeholder="Password" autocomplete="off">
+            <p><%= error %></p>
+            <div class="buttons">
+              <button class="button" type="submit">Login</button>
+              <div><br>
+                <span>Don't have an account? <a href="/">Register</a></span>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

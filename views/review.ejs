@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+
+<div class="product-review-container">
+    <h1>View any product to Review</h1>
+    <% for(var i=0;i<products.length;i++){ %>
+        <div class="product-review">
+            <div>
+                <span><%= products[i].title %></span>
+                <img src="/uploads/<%= products[i].image %>" alt="Product Image">
+                <form action="/product" method="post" class="view-product-form">
+                    <input type="text" name="productID" value="<%= products[i].image %>">  
+                    <button class="view-product" type="submit">View Product</button>
+                </form>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+<%- include("partials/footer") -%>

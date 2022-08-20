@@ -1,0 +1,38 @@
+<%- include("partials/header") -%>
+
+<div class="cart-container">
+
+    <h1 class="cart-heading">Shopping Cart</h1>
+    <div class="cart-content">
+        <div class="cart-items">
+            <% for(var i=0;i<items.length;i++){ %>
+                <div class="cart-item">
+                    <div>
+                        <img class="cart-item-image" src="/uploads/<%= items[i].image %>" alt="Item">
+                    </div>
+                    <div class="cart-item-heading">
+                        <h4><%= items[i].title %></h4>
+                        <span>In Stock</span>
+                        Quantity: <input type="number" name="quantity" min="0" placeholder="Quantity" value="1">
+                        <form action="/deleteCartItem" method="post">
+                          <input type="text" name="productID" value="<%= items[i]._id %>">
+                          <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                    <div class="cart-item-price">Rs. <%= items[i].price %></div>
+                </div>
+            <% } %>
+            
+        </div>
+        <div class="cart-subtotal">
+            <span><i class="fa-solid fa-circle-check"></i> Free Delivery</span>
+            <h4>Subtotal ( <%= totalItems %> item): Rs. <%= subtotal %></h4>
+            <a href="/orderPlaced" class="buy">Proceed to Buy</a>
+            <a href="/products">Shop More</a>
+        </div>
+    </div>
+
+</div>
+
+
+<%- include("partials/footer") -%>

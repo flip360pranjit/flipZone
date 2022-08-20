@@ -1,0 +1,47 @@
+<%- include("partials/header") -%>
+
+<section class="product-container">
+  <div class="product-items">
+
+
+    <% for(var i=0;i<products.length;i++){ %>
+      <div class="product-item">
+        <div class="product-img">
+          <img class="item-img"src="/uploads/<%= products[i].image %>" alt="Item">
+          <div class="rating">
+            <% for(var j=0;j< products[i].rating ;j++){ %>
+              <i class="fa-solid fa-star"></i>
+            <% } %>
+          </div>
+        </div>
+        <h3><%= products[i].title %></h3>
+        <form action="/product" method="post" class="view-product-form">
+          <input type="text" name="productID" value="<%= products[i].image %>">  
+          <button class="view-product" type="submit">View Product</button>
+        </form>
+        <div class="buy-add">
+          <form action="/cart" method="post">
+            <input type="text" name="productID" value="<%= products[i]._id %>">  
+            <button type="submit" class="add">
+              <h6>Add to Cart</h6>
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </form>
+          
+          <form action="/cart" method="post">
+            <input type="text" name="productID" value="<%= products[i]._id %>"> 
+            <button type="submit" class="buy">
+              <h6>Buy Now</h6>
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </form>
+          
+        </div>
+        <h5>Rs. <%= products[i].price %></h5>
+      </div>
+    <% } %>
+
+  </div>
+</section>
+
+<%- include("partials/footer") -%>

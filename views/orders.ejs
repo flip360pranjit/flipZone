@@ -1,0 +1,35 @@
+<%- include("partials/header") -%>
+
+<div class="order-container">
+    <h1>My Orders</h1>
+    <% for(var j=items.length-1;j>=0;j--){ %>
+        <% for(var i=0;i<items[j].cart.length;i++){ %>
+            <div class="order">
+                <div>
+                    <div class="order-img-title">
+                        <img src="/uploads/<%= items[j].cart[i].image %>" alt="Product Image">
+                        <h4><%= items[j].cart[i].title %></h4>
+                    </div>
+
+                    <div>
+                        <h6 style="color: #5F7161;">Status:</h6>
+                        <h6 style="color: #3EC70B;"><strong>Delivered</strong></h6>
+                    </div>
+
+                    <div>
+                        <h6 style="color: #5F7161;">Ordered on:</h6>
+                        <h6><%= items[j].date %></h6>
+                    </div>
+
+                    <form action="/product" method="post" class="view-product-form">
+                        <input type="text" name="productID" value="<%= items[j].cart[i].image %>">  
+                        <button class="view-product" type="submit">Review Product</button>
+                    </form>
+                </div>
+            </div>
+        <% } %>
+    <% } %>
+    
+</div>
+
+<%- include("partials/footer") -%>

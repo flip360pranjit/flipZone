@@ -1,0 +1,76 @@
+<%- include("partials/header") -%>
+<div class="review-container">
+    <h1><%= product.title %></h1>
+    
+    <div class="review-content">
+        <div class="product-section-with-buttons">
+            <div class="light-div">
+                <div class="product-section">
+                    <div class="product-panel">
+                        <img src="/uploads/<%= product.image %>" alt="Product Image">
+                    </div>
+                    <div class="product-description">
+                        <h4><%= product.title %></h4>
+                        <h3>Rs. <%= product.price %></h3>
+                        <p><strong>Description:</strong> <%= product.description %></p>
+                    </div>
+                </div>
+                <div class="review-buy-add">
+                    <div class="buy-add">
+                        <form action="/cart" method="post">
+                          <input type="text" name="productID" value="<%= product._id %>">  
+                          <button type="submit" class="add">
+                            <h6>Add to Cart</h6>
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </button>
+                        </form>
+                        
+                        <form action="/buy" method="post">
+                          <input type="text" name="productID" value="<%= product._id %>"> 
+                          <button type="submit" class="buy">
+                            <h6>Buy Now</h6>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </button>
+                        </form>
+                        
+                      </div>
+                </div>
+                <div class="write-a-review">
+                    <form action="/write-a-review" method="post">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="text" name="description" placeholder="Description">
+                        <input type="number" name="rating" min="0" max="5" placeholder="Rating">
+                        <input class="productID" type="text" name="productID" value="<%= product.image %>">  
+                        <button type="submit" class="review-button">
+                            Write A Review
+                        </button>
+                      </form>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="reviews-panel">
+            <div class="review-header">
+                <span>Reviews</span>
+                <div>
+                    <% for(var i=0;i<product.rating;i++){ %>
+                        <i class="fa-solid fa-star"></i>
+                    <% } %>
+                </div>
+                <div><h4><%= product.numberOfRatings %> Reviews</h4></div>
+            </div>
+            
+            <div class="reviews">
+                <% for(var a=0; a<reviews.length;a++){ %>
+                    <div class="review">
+                        <h3>Name: <%= reviews[a].name %></h3>
+                        <p><%= reviews[a].des %></p>
+                    </div>
+                <% } %>
+                
+            </div>
+        </div>
+    </div>
+</div> 
+<%- include("partials/footer") -%> 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="cartLogo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>flipZone</title>
+  </head>
+  <body class="authenticateBody">
+    <section class="content">
+      <div class="left">
+        <div class="container">
+          <div class="heading">
+            <hr><span>Register</span><hr>
+          </div>
+          <form action="/register" method="post">
+            <div class="name">
+              <input class="input-field" type="text" name="firstName" placeholder="First Name" autocomplete="off">
+              <input class="input-field" type="text" name="lastName" placeholder="Last Name" autocomplete="off">
+            </div>
+            <input class="input-field block-input" name="email" type="email" placeholder="Email" autocomplete="off">
+            <input class="input-field block-input" name="password" type="password" placeholder="Password" autocomplete="off">
+            <input class="input-field block-input" name="confirmPassword" type="password" placeholder="Confirm Password" autocomplete="off">
+            <input class="input-field block-input" name="contact" type="text" placeholder="Contact Number" autocomplete="off">
+            <p><%= error %></p>
+            <div class="check">
+              <input type="checkbox" id="check">
+              <label for="check">I accept the Terms of Use and Privacy Policy</label>
+            </div>
+            <div class="buttons">
+              <button class="button" type="submit">Register Now</button>
+              <div><br>
+                <span>Already have an account? <a href="/login">Login</a></span>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        
+      </div>
+    </section>
+
+  </body>
+</html>
