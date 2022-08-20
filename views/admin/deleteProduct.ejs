@@ -1,0 +1,38 @@
+<%- include("../partials/header") -%>
+
+<section class="product-container">
+  <div class="product-items">
+
+
+    <% for(var i=0;i<products.length;i++){ %>
+
+      <div class="product-item">
+        <div class="product-img">
+          <img class="item-img"src="/uploads/<%= products[i].image %>" alt="Item">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="delete-product">
+            <form action="/delete" method="post">
+              <input type="text" name="productID" value="<%= products[i]._id %>">  
+              <button type="submit" class="add">
+                <i class="fa-solid fa-trash-can red"></i>
+              </button>
+            </form>  
+          </div>
+        </div>
+        <h3><%= products[i].title %></h3>
+        
+
+        <h5>Rs. <%= products[i].price %></h5>
+      </div>
+    <% } %>
+
+  </div>
+</section>
+
+<%- include("../partials/footer") -%>

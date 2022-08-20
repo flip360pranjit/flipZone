@@ -1,0 +1,21 @@
+
+<%- include("../partials/header") -%>
+
+<div class="upload">
+  <div class="content">
+    <div class="upload-content">
+      <h2>Upload Product</h2>
+      <hr>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input class="upload-input block-input" type="text" name="title" placeholder="Title">
+        <input class="upload-input file-input" type="file" accept="image/jpg" name="image" placeholder="Image">
+        <textarea class="upload-input" name="description" rows="5" cols="50" placeholder="Description"></textarea>
+        <input class="upload-input block-input" type="number" name="price" placeholder="Price" min="0">
+        <button class="button upload-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<%- include("../partials/footer") -%>

@@ -1,0 +1,28 @@
+<%- include("../partials/header") -%>
+
+<div class="account-container">
+    <div class="account-content">
+        <div class="account-options">
+            <div class="account-icon">
+                <img src="account_icon.png" alt="Icon">
+            </div><hr>
+            <% if(user.email==="admin@acmegrade.com"){ %>
+                <a href="/upload"><h4>Add Product</h4></a><br>
+                <a href="/products"><h4>View Products</h4></a><br>
+                <a href="/delete"><h4>Delete Product</h4></a><br>
+                <a href="/orders"><h4>My Orders</h4></a><br>
+            <% }else{ %>
+                <a href="/products"><h4>View Products</h4></a><br>
+                <a href="/orders"><h4>My Orders</h4></a><br>
+            <% } %>
+            
+        </div>
+        <div class="account-info">
+            <h4><span>Name:</span> <%= user.name %></h4>
+            <h4><span>Email:</span> <%= user.email %></h4>
+            <h4><span>Contact:</span> +91-<%= user.contact %></h4>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer") -%>
