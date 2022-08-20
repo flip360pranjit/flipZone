@@ -1,0 +1,1035 @@
+
+h2
+{
+  text-align: center;
+  font-family: "Montserrat";
+  color: white !important;
+  margin: 0;
+}
+h3
+{
+  font-family: "Playfair Display";
+  text-align: center;
+  width: 300px;
+  margin-top: 10px !important;
+  margin-left: 30px;
+}
+h5
+{
+  width: 300px;
+  text-align: center;
+  margin: 15px 0 !important;
+  margin-left: 30px !important;
+}
+h6
+{
+  display: inline-block;
+  margin-bottom: 0 !important;
+  margin-right: 3px;
+}
+.upload
+{
+  background-color: #D6EFED;
+  padding: 20px 0;
+}
+/*********************************************** Navigation Bar *********************************************************/
+.dark-top
+{
+  height: 30px;
+  background-color: #3F4E4F;
+}
+.light-bottom
+{
+  height: 60px;
+  background: white;
+}
+.logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+.logo-txt
+{
+  font-size: 2rem;
+}
+.navbar {
+  padding-bottom: 1rem;
+}
+.nav-bar
+{
+  background-color: white;
+  color: black;
+}
+.toggle-button
+{
+  background-color: #3F4E4F;
+  border-radius: 5px;
+}
+.nav-txt
+{
+  color: black;
+}
+.cart-icon
+{
+  margin-right: 3px;
+}
+.navbar-brand {
+  font-family: "Poppins";
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+.nav-logo
+{
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 100;
+  color: #2C3639 !important;
+}
+.nav-link:hover
+{
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+/****************************************** Authenticate **********************************************/
+.content
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin-left: 20px;
+  z-index: 2;
+}
+.authenticateBody
+{
+  background-image: url("../authenticatePage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container
+{
+  display: inline-block;
+  background-color: white;
+  margin: 0;
+  padding: 50px;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+.heading
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.heading hr
+{
+  width: 100px;
+  border: none;
+  border-top: 2px solid black;
+}
+.heading span
+{
+  font-size: 2rem;
+  margin: 0 15px;
+}
+.name
+{
+  display: flex;
+  justify-content: space-between;
+}
+.input-field
+{
+  height: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+.block-input
+{
+  height: 20px;
+  display: block;
+  width: 99%;
+}
+.check
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#check
+{
+  margin-right: 10px;
+}
+.buttons
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.button
+{
+  background-color: #4E944F;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+.button:hover
+{
+  background-color: #5BB318;
+}
+.container form p
+{
+  color: red;
+  font-size: 1.2rem;
+}
+
+
+
+/**********************************************Home**********************************************/
+
+.home-container
+{
+  padding: 0 15px;
+}
+.home-content
+{
+  display: inline-block;
+  padding: 0 50px;
+}
+.home-shop
+{
+  background-image: url("../home1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 10px;
+}
+.home-fashion
+{
+  background-image: url("../home2.jpg");
+  background-position: center;
+  background-size: cover;
+  /* width: 700px; */
+  height: 500px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.home-gaming
+{
+  background-image: url("../home3.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 10px;
+}
+.fashion-item-text
+{
+  color: white;
+  margin-top: 200px;
+}
+.shop-item-text
+{
+  margin-left: 220px;
+}
+.gaming-item-text
+{
+  color: white;
+  margin-top: 10px;
+}
+.gaming-item-text h1
+{
+  text-align: right;
+  margin-bottom: 30px;
+}
+.home-shop a
+{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 220px;
+}
+.home-shop a:hover
+{
+  background-color: #2C3333;
+  color: white;
+}
+.home-fashion a, .home-gaming a
+{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+}
+.home-fashion a:hover, .home-gaming a:hover
+{
+  background-color: #83BD75;
+  color: white;
+}
+
+
+
+/****************************************My Account******************************/
+
+.account-container
+{
+  background-color: #4E944F;
+  align-items: center;
+  display: block;
+  padding: 30px 200px;
+}
+.account-content
+{
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 0;
+}
+.account-icon
+{
+  display: flex;
+  justify-content: center;
+}
+.account-icon img
+{
+  color: white;
+  width: 200px;
+}
+.account-options
+{
+  background-color: #2C3333;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.account-options hr
+{
+  border: none;
+  border-top: 2px solid white;
+}
+.account-options a h4
+{
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  margin: 5px 0;
+}
+.account-options a:hover
+{
+  color: #DFDFDE;
+}
+.account-info
+{
+  background-color: #A5C9CA;
+  padding: 50px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.account-info h4
+{
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+h4 span
+{
+  font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+/*************************************Upload Item****************************************/
+.upload-content
+{
+  display: inline-block;
+  background-color: #7F8487;
+  padding: 50px;
+  border-radius: 5px;
+}
+.upload-content hr
+{
+  border: none;
+  border-top: 3px solid white;
+}
+.upload-input
+{
+  display: block;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.upload-button
+{
+  background-color: #83BD75;
+}
+.file-input
+{
+  cursor: pointer;
+}
+
+
+/***************************************Delete Product*****************************************/
+
+.delete-product form input
+{
+  display: none;
+}
+.delete-product
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.delete-product button
+{
+  border: none;
+  background: none;
+}
+.red
+{
+  color: #EB4747;
+  height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/**********************************************Products**********************************************/
+
+.product-items
+{
+  padding: 20px;
+  background-color: #A0D995;
+}
+.product-item
+{
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.product-item:hover
+{
+  box-shadow: -5px 5px 10px;
+}
+.product-img
+{
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+}
+.item-img
+{
+  width: 300px;
+}
+.rating
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.buy-add
+{
+  width: 300px;
+  padding: 0 20px;
+}
+.product-item input
+{
+  margin: 7px 40px;
+  width: 260px;
+}
+.buy-add
+{
+  margin: 0 20px;
+  margin-top: 20px;
+  display: flex;
+}
+.buy-add form .add
+{
+  display: inline-block;
+  background-color: white;
+  width: 130px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-add form .buy
+{
+  width: 130px;
+  height: 40px;
+  display: inline-block;
+  background-color: #83BD75;
+  border: 1px solid black;
+  padding: 0 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-add form .add:hover
+{
+  background-color: #DFDFDE;
+}
+.buy-add form .buy:hover
+{
+  background-color: #5BB318;
+}
+.buy-add form input
+{
+  display: none;
+}
+
+
+
+
+/***************************************Add to Cart************************************/
+.cart-container
+{
+  background-color: #D6EFED;
+}
+.cart-heading
+{
+  margin-left: 20px;
+}
+.cart-subtotal
+{
+  background-color: white;
+  border-radius: 5px;
+  margin: 7px 20px 20px 0;
+  box-shadow: -5px 5px 10px;
+  padding: 10px;
+  height: 200px;
+}
+.cart-subtotal span
+{
+  color: #2B7A0B;
+}
+.cart-subtotal h4
+{
+  margin-bottom: 50px;
+}
+.cart-subtotal .buy
+{
+  padding: 13px 40px;
+  background-color: #5BB318;
+  margin-top: 40px;
+}
+.cart-subtotal .buy:hover
+{
+  background-color: #4E944F;
+}
+.cart-subtotal a
+{
+  background-color: #2C3333;
+  color: white;
+  padding: 13px 40px;
+  margin-top: 20px;
+}
+.cart-subtotal a:hover
+{
+  background-color: #7F8487;
+  color: white;
+}
+.cart-content
+{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.cart-items
+{
+  padding: 20px;
+}
+.cart-item
+{
+  display: grid;
+  grid-template-columns: 400px auto 100px;
+  padding: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: -5px 5px 10px;
+}
+.cart-item-image
+{
+  width: 300px;
+}
+.cart-item-heading span
+{
+  color: #2B7A0B;
+  display: block;
+  margin-bottom: 10px;
+}
+.cart-item-heading input
+{
+  width: 75px;
+}
+.cart-item-heading form input
+{
+  display: none;
+}
+.cart-item-heading form button
+{
+  border: none;
+  color: #1C3879;
+  margin-top: 10px;
+}
+.cart-item-price
+{
+  font-size: 1.5rem;
+}
+
+.placed-container
+{
+  margin: 40px;
+  padding: 40px;
+  background-color: #F1F1F1;
+}
+.placed-container h1
+{
+  font-size: 5rem;
+}
+.placed-container form button
+{
+  background-color: #5BB318;
+  padding: 20px 50px;
+}
+.placed-container form button:hover
+{
+  background-color: #83BD75;
+}
+
+
+/**************************************Reviews************************************/
+
+.review-container h1
+{
+  text-align: center;
+}
+.product-panel img
+{
+  width: 150px;
+}
+.review-content
+{
+  padding: 40px;
+}
+.product-section
+{
+  display: flex;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+.product-panel
+{
+  margin-right: 20px;
+}
+.product-panel img
+{
+  margin: 20px 0 0 20px;
+}
+.product-description h4
+{
+  text-align: center;
+  font-size: 2rem;
+}
+.product-description h3
+{
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  margin: 0;
+}
+.review-header
+{
+  background-color: #DFDFDE;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+}
+.review-header span
+{
+  font-size: 2rem;
+  font-family: "Poppins";
+}
+.review
+{
+  border: 2px solid black;
+  margin-top: 7px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.product-items form input
+{
+  display: none;
+}
+.view-product-form button
+{
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  margin-left: 100px;
+}
+.view-product-form button:hover
+{
+  background-color: #2C3639;
+}
+.review-buy-add
+{
+  display: flex;
+  justify-content: center;
+}
+.write-a-review
+{
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.write-a-review form input
+{
+  display: block;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 300px;
+  margin-left: 30px;
+}
+.productID
+{
+  display: none !important;
+}
+.write-a-review form button
+{
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  margin-left: 100px;
+}
+.write-a-review form button:hover
+{
+  background-color: #2C3639;
+}
+.light-div
+{
+  background-color: #EEEEEE;
+  margin-right: 10px;
+  padding: 20px 0;
+}
+
+
+
+
+
+
+
+/************************************Review*****************************/
+.order-container
+{
+  padding: 20px;
+}
+.order
+{
+  border: 1px solid #C0D8C0;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+.order div
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order div form input
+{
+  display: none;
+}
+
+
+
+
+
+
+
+/*********************************************** Footer *********************************************************/
+
+
+.footer .box-container
+{
+  background-color: #323232;
+  padding: 2rem;
+  width: 100.9%;
+}
+.footer .box-container .box h3
+{
+  color: #fff;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  margin: 0 !important;
+}
+.footer .box-container .box a
+{
+  padding-bottom: 1rem;
+}
+.i-color
+{
+  font-size: 1rem;
+  color: #F900BF;
+}
+a:link
+{
+  text-decoration: none;
+}
+.links
+{
+  color: #C0D8C0;
+  font-size: 1.5rem;
+  transition: .2s linear;
+  padding-left: 0.625rem;
+}
+.links:hover
+{
+  padding-left: 1.2rem;
+}
+.credits
+{
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 0.3125rem 0;
+}
+
+
+@media screen and (min-width: 400px)
+{
+  .home-content
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-shop div h1
+  {
+    font-size: 0.9rem;
+  }
+  .home-shop div p
+  {
+    font-size: 0.7rem;
+  }
+  .home-shop a
+  {
+    font-size: 0.7rem;
+  }
+  .product-items
+  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 100px;
+  }
+  .product-item
+  {
+    width: 340px;
+  }
+  .order-container
+{
+  padding: 10px;
+}
+.order
+{
+  padding: 5px 10px;
+}
+.order div
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  size: 50%;
+}
+  .order div div img
+  {
+    height: 50px;
+  }
+  .order div div h4
+  {
+    font-size: 0.7rem;
+  }
+  .order div div h6:nth-child(2n-1)
+  {
+    display: none;
+  }
+  .order div div h6:nth-child(2n)
+  {
+    margin-left: 30px;
+  }
+  .order div form button
+  {
+    margin: 10px 0 10px 20px;
+    padding: 1px 2px;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 900px)
+{
+  .home-content
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-shop div h1
+  {
+    font-size: 2rem;
+    text-align: right;
+  }
+  .home-shop div p
+  {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  .home-shop a
+  {
+    font-size: 1rem;
+  }
+  .product-items
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 100px;
+  }
+  .product-item
+  {
+    width: 340px;
+  }
+  .order-container
+{
+  padding: 10px;
+}
+.order
+{
+  padding: 5px 10px;
+}
+.order div
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  size: 50%;
+}
+  .order div div img
+  {
+    height: 100px;
+  }
+  .order div form button
+  {
+    margin: 10px 0 10px 20px;
+    padding: 2.5px 5px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1200px)
+{
+  .product-items
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 100px;
+  }
+  .product-item
+  {
+    width: 340px;
+  }
+  .home-content
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .home-fashion
+  {
+    grid-row: 1/3;
+  }
+  .home-shop
+  {
+    grid-row: 1;
+  }
+  .home-gaming
+  {
+    grid-row: 2;
+  }
+  .product-section-with-buttons
+{
+  grid-column: 1;
+}
+
+.review-content
+{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.reviews-panel
+{
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+.order-container
+{
+  padding: 10px;
+}
+.order
+{
+  padding: 5px 10px;
+}
+.order div
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .order div div img
+  {
+    height: 200px;
+  }
+  .order div div h4
+  {
+    font-size: 0.7rem;
+  }
+  .order div div h6:nth-child(2n-1)
+  {
+    display: inline-block;
+  }
+  .order div div h6:nth-child(2n)
+  {
+    margin-left: 30px;
+  }
+  .order div form button
+  {
+    margin: 10px 0 10px 20px;
+    padding: 20px 50px;
+    font-size: 1rem;
+  }
+}
